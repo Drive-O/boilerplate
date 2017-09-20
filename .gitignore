@@ -1,0 +1,12 @@
+# NPM
+node_modules
+npm-debug.log
+
+# CSS
+app/public/css
+
+# JS
+app/public/js 
+
+# YARN
+yarn-error.log

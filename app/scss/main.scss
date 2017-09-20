@@ -1,0 +1,28 @@
+@import 'settings/_colors';
+
+* {
+  color: $black;
+  background: $light;
+  border: 1px solid $green;
+}
+
+.foo {
+  .bar{
+    color: $white;
+    padding: 0 10px;
+  }
+
+}
+
+#id {
+  color: $black;
+  background: rgb(255, 255, 255);
+}
+
+.a, 
+.abc, 
+.thd {
+  font-size: 19px;
+  color: #FFFFFF;
+}
+

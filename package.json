@@ -1,0 +1,24 @@
+{
+  "name": "project-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple boilerplate with npm script and linter",
+  "main": "index.html",
+  "sasslintConfig": "sass-lint.yml",
+  "scripts": {
+    "build": "npm run sass && npm run compile:ts",
+    "prebuild": "npm run lint:sass && npm run lint:ts",
+    "sass": "node-sass app/scss/ -o app/public/css/",
+    "watch": "node-sass -w app/scss/ -o app/public/css/",
+    "lint:sass": "sass-lint app/scss/*.scss -v -q",
+    "compile:ts": "tsc --outDir app/public/js/ --module commonjs app/ts/main.ts",
+    "lint:ts": "tslint -c tslint.json app/ts/**/*.ts"
+  },
+  "author": "philipp rost",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "sass-lint": "^1.11.1",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  }
+}
